@@ -37,35 +37,66 @@ Make sure you have a vector-capable Astra database (get one for free at [astra.d
 
 ![codespace](./assets/openai-key.png)
 
+### Download Repository
+
+1. Please visit the GitHub repository at: [Repository](https://github.com/oktytncy/build-rag-chatbot/tree/main)
+
+2. Click <span style="color:green"><> Code</span> and choose one of the method to download files.
+
+    ![Repo](/./assets//repo.png)
+
+3. You can download the ZIP file from the link, or if you have Git installed on your computer, you can use the following command to download it:
+
+    ```git
+    git clone https://github.com/oktytncy/build-rag-chatbot.git
+    ```
+
 ### Create a Virtual Environment [Optional] 
 
 Some environments can be managed externally by a system package manager, such as Homebrew in macOS. 
 
 This means that your system may prevent you from installing packages globally to avoid conflicts with packages managed by the system package manager. This may pose an obstacle to package installation.
 
-**To avoid this issue, you can Create a Virtual Environment before running the following command.**
+**To avoid this issue, you can Create a Virtual Environment before running python or pip commands.**
 
 ```bash
 cd "<YOUR-INSTALLATION-PATH>"
 ```
 
-1. Install env
+#### on Linux/Mac/..
 
-- on Linux/Mac/..
+Install environment and activate the virtual environment.
+
 ```python
 python3 -m venv myenv
 ```
 
-2. Next, activate the virtual environment. Activation commands vary depending on your shell:
-
-- For bash/zsh:
 ```bash
-source "<YOUR-INSTALLATION-PATH>"/myenv/bin/activate
+source myenv/bin/activate
 ```
 
-- on Windows
+#### on Windows
+
+Install environment and activate the virtual environment.
+
+```python
+python3 -m venv myenv
 ```
-"<YOUR-INSTALLATION-PATH>"/myenv\Scripts\activate.bat
+
+```bash
+myenv\Scripts\activate
+```
+
+In PowerShell, you might need to change the execution policy to allow the activation script to run. You can do this by running PowerShell as Administrator and executing the following command:
+
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+Then, activate the virtual environment with:
+
+```powershell
+.\venv\Scripts\Activate.ps1
 ```
 
 Once the virtual environment is activated, you will see its name in the prompt, indicating that any Python or pip commands will now run within this isolated environment. You can then install packages using pip.
@@ -75,3 +106,18 @@ Once the virtual environment is activated, you will see its name in the prompt, 
 ```python
 pip3 install -r requirements.txt
 ```
+
+### Run application
+ 
+Before we continue, we have to provide the ASTRA_API_ENDPOINT, and ASTRA_TOKEN, OPENAI_API_KEY in ./streamlit/secrets.toml. There is an example provided in secrets.toml.example:
+
+```toml
+# Astra DB secrets
+ASTRA_API_ENDPOINT = ""
+ASTRA_TOKEN = ""
+
+# OpenAI secrets
+OPENAI_API_KEY = "<YOUR-API-KEY>"
+```
+
+#### Please refer to the [README](/step-by-step-app/README.md) file for more detailed instructions!

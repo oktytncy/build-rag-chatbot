@@ -3,7 +3,7 @@
 
 Let us now build a real application we will use the following architecture
 
-![steps](./assets/steps.png)
+![steps](/./assets/steps.png)
 
 In this workshop we'll use Streamlit which is an amazingly simple to use framework to create front-end web applications.
 
@@ -225,7 +225,7 @@ class StreamHandler(BaseCallbackHandler):
 
     def on_llm_new_token(self, token: str, **kwargs):
         self.text += token
-        self.container.markdown(self.text + "▌")
+        self.container.markdown(self.text + " ")
 ```
 
 Then we explain the Chat Model to make user of the StreamHandler:
@@ -307,7 +307,7 @@ streamlit run step-by-step-app/app_final.py
 
 Now upload a PDF document (the more the merrier) that is relevant to you and start asking questions about it. You'll see that the answers will be relevant, meaningful and contextual! 🥳 See the magic happen!
 
-![end-result](./assets/first_login.png)
+![end-result](/./assets/first_login.png)
 
 # Optional
 
@@ -319,7 +319,7 @@ If you have not do so before, please set up your account on Streamlit. When you 
 
 1. Head over to [Streamlit.io](https://streamlit.io) and clikc `Sign up`. Then select `Continue with Github`:
 
-    ![Streamlit](./assets/streamlit-0.png)
+    ![Streamlit](/./assets/streamlit-0.png)
 
 2. Log in using your Github credentials:
 
@@ -335,7 +335,7 @@ On the main screen, when logged in, click `New app`.
 
 2. Now define your application settings. Use YOUR repository name, and name the Main file path as `app.py`. Pick a cool App URL as you'll app will be deployed to that:
 
-    ![Streamlit](./assets/streamlit-5.png)
+    ![Streamlit](/./assets//streamlit-5.png)
 
 3. Click on Advanced, select Python 3.11 and copy-paste the contents from your `secrets.toml`.
 
