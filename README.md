@@ -122,4 +122,8 @@ ASTRA_TOKEN = ""
 OPENAI_API_KEY = "<YOUR-API-KEY>"
 ```
 
+```bash
+streamlit run app_final.py
+```
+
 #### Please refer to the [README](/step-by-step-app/README.md) file for more detailed instructions!
