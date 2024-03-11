@@ -18,6 +18,7 @@ This workshop assumes you have access to:
 1. [A Github account](https://github.com)
 
 During the course, you'll gain access to the following by signing up for free:
+
 1. [DataStax Astra DB](https://astra.datastax.com) (you can sign up through your Github account)
 2. [OpenAI account](https://platform.openai.com/signup) (you can sign up through your Github account)
 3. **[Optional]** [Streamlit](https://streamlit.io) to deploy your amazing app (you can sign up through your Github account)
