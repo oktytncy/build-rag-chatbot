@@ -55,11 +55,14 @@ pip3 install -r requirements.txt
 cd "<YOUR-INSTALLATION-PATH>"
 ```
 
+1. Install env
+
+- on Linux/Mac/..
 ```python
 python3 -m venv myenv
 ```
 
-Next, activate the virtual environment. Activation commands vary depending on your shell:
+2. Next, activate the virtual environment. Activation commands vary depending on your shell:
 
 - For bash/zsh:
 ```bash
@@ -81,10 +84,25 @@ source "<YOUR-INSTALLATION-PATH>"/myenv/bin/activate.csh
 "<YOUR-INSTALLATION-PATH>"/myenv/bin/Activate.ps1
 ```
 
+- on Windows
+```
+"<YOUR-INSTALLATION-PATH>"/myenv\Scripts\activate.bat
+```
+
 Once the virtual environment is activated, you will see its name in the prompt, indicating that any Python or pip commands will now run within this isolated environment. You can then install packages using pip.
 
 ```python
 pip3 install -r requirements.txt
+```
+
+4. In order to check which packages have been installed.
+
+```
+pip3 freeze
+```
+Which you can save to requirements.txt if you want:
+```
+pip3 freeze > requirements.txt
 ```
 
 ## 1️⃣ Getting started with Streamlit to build an app
@@ -421,7 +439,7 @@ On the main screen, when logged in, click `New app`.
 
 1. When this is your first deployment, provide additional permissions:
 
-2. Now define your application settings. Use YOUR repository name, and name the Main file path as `app_7.py`. Pick a cool App URL as you'll app will be deployed to that:
+2. Now define your application settings. Use YOUR repository name, and name the Main file path as `app.py`. Pick a cool App URL as you'll app will be deployed to that:
 
     ![Streamlit](./assets/streamlit-5.png)
 
@@ -430,37 +448,3 @@ On the main screen, when logged in, click `New app`.
 Click Deploy! Wait for a bit and your app is online for everyone to use!
 
 ⛔️ Be aware that this app is public and uses your OpenAI account which will incur cost. You'll want to shield it off by clicking `Settings->Sharing` in the main screen and define the email addresses that are allowed access. In order to enable this, link your Google account.
-
-# Python environments
-In case you want to run all of the above locally, it's useful to create a *Virtual Environment*. Use the below to set it up:
-```
-python3 -m venv myenv
-```
-Then activate it as follows:
-```
-source myenv/bin/activate   # on Linux/Mac
-myenv\Scripts\activate.bat  # on Windows
-```
-Now you can start installing packages:
-```
-pip3 install -r requirements.txt
-```
-In order to check which packages have been installed:
-```
-pip3 freeze
-```
-Which you can save to requirements.txt if you want:
-```
-pip3 freeze > requirements.txt
-```
-
-
---------
-### [Optional] Sign up for Streamlit
-Follow the steps outlined [here](https://docs.streamlit.io/streamlit-community-cloud/get-started/quickstart).
-
-![codespace](./assets/streamlit.png)
-
-
-
-##  8️⃣ 9️⃣ 1️⃣0️⃣ Now let's make magic happen! 🦄
