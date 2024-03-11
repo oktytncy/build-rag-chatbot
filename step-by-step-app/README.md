@@ -186,8 +186,6 @@ inputs = RunnableMap({
 })
 ```
 
-Check out the complete code in [app_5.py](./app_5.py).
-
 Before we continue, we have to provide the `ASTRA_API_ENDPOINT` and `ASTRA_TOKEN` in `./streamlit/secrets.toml`. There is an example provided in `secrets.toml.example`:
 
 ```toml
@@ -301,7 +299,7 @@ Check out the complete code in [app_final.py](app_final.py).
 
 **If you want to test and run the app:**
 ```bash
-streamlit run step-by-step-app/app_final.py
+streamlit run app_final.py
 ```
 
 Now upload a PDF document (the more the merrier) that is relevant to you and start asking questions about it. You'll see that the answers will be relevant, meaningful and contextual! 🥳 See the magic happen!
