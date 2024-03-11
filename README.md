@@ -51,7 +51,9 @@ Make sure you have a vector-capable Astra database (get one for free at [astra.d
     git clone https://github.com/oktytncy/build-rag-chatbot.git
     ```
 
-### Create a Virtual Environment [Optional] 
+    For more information on installing Git, please visit the [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+
+### Create a Virtual Environment [Optional]
 
 Some environments can be managed externally by a system package manager, such as Homebrew in macOS. 
 
