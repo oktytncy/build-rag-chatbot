@@ -375,11 +375,11 @@ def vectorize_text(uploaded_file, vector_store):
         st.info(f"{len(pages)} pages loaded.")
 ```
 
-Check out the complete code in [app_7.py](./step-by-step-app/app_7.py).
+Check out the complete code in [app_final.py](app_final.py).
 
 **If you want to test and run the app:**
 ```bash
-streamlit run step-by-step-app/app_7.py
+streamlit run step-by-step-app/app_final.py
 ```
 
 Now upload a PDF document (the more the merrier) that is relevant to you and start asking questions about it. You'll see that the answers will be relevant, meaningful and contextual! 🥳 See the magic happen!
