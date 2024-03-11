@@ -127,8 +127,6 @@ OPENAI_API_KEY = "<YOUR-API-KEY>"
 streamlit run app_final.py
 ```
 
-![final_stage](/./assets/final_stage.png)
-
 Once the login page appears, you can select multiple files using the **Browse files** option and then insert these files into the database in chunks.
 
 ![first_test](/./assets/first_test.png)
