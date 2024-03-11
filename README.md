@@ -126,4 +126,14 @@ OPENAI_API_KEY = "<YOUR-API-KEY>"
 streamlit run app_final.py
 ```
 
+![final_stage](/./assets/final_stage.png)
+
+Once the login page appears, you can select multiple files using the **Browse files** option and then insert these files into the database in chunks.
+
+![first_test](/./assets/first_test.png)
+
+By logging into [DataStax Astra DB](https://astra.datastax.com), you can view newly inserted data in the database.
+
+![pages](/./assets/db_status.png)
+
 #### Please refer to the [README](/step-by-step-app/README.md) file for more detailed instructions!
