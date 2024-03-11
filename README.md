@@ -63,37 +63,12 @@ python3 -m venv myenv
 source "<YOUR-INSTALLATION-PATH>"/myenv/bin/activate
 ```
 
-- For Fish:
-```bash
-. "<YOUR-INSTALLATION-PATH>"/myenv/bin/activate.fish
-```
-
-- For csh/tcsh:
-```bash
-source "<YOUR-INSTALLATION-PATH>"/myenv/bin/activate.csh
-```
-
-- For PowerShell:
-```bash
-"<YOUR-INSTALLATION-PATH>"/myenv/bin/Activate.ps1
-```
-
 - on Windows
 ```
 "<YOUR-INSTALLATION-PATH>"/myenv\Scripts\activate.bat
 ```
 
 Once the virtual environment is activated, you will see its name in the prompt, indicating that any Python or pip commands will now run within this isolated environment. You can then install packages using pip.
-
-3. In order to check which packages have been installed.
-
-```
-pip3 freeze
-```
-Which you can save to requirements.txt if you want:
-```
-pip3 freeze > requirements.txt
-```
 
 ### Install Required Packages
 
