@@ -3,14 +3,14 @@ Welcome to this workshop to build and deploy your own Chatbot using Retrieval Au
 
 It leverages [DataStax RAGStack](https://docs.datastax.com/en/ragstack/docs/index.html), which is a curated stack of the best open-source software for easing implementation of the RAG pattern in production-ready applications that use Astra Vector DB or Apache Cassandra as a vector store.
 
-![codespace](./assets/chatbot.png)
+![codespace](./assets/first_test.png)
 
-What you'll learn:
-- 🤩 How to leverage [DataStax RAGStack](https://docs.datastax.com/en/ragstack/docs/index.html) for production-ready use of the following components:
+**What you'll learn:**
+- How to leverage [DataStax RAGStack](https://docs.datastax.com/en/ragstack/docs/index.html) for production-ready use of the following components:
     - 🚀 The [Astra DB Vector Store](https://db.new) for Semantic Similarity search
     - 🦜🔗 [LangChain](https://www.langchain.com) for linking OpenAI and Astra DB
-- 🤖 How to use [OpenAI's Large Language Models](https://platform.openai.com/docs/models) for Q&A style chatbots
-- 👑 How to use [Streamlit](https://streamlit.io) to easily deploy your awesome app to the internet for everyone to see!
+- How to use [OpenAI's Large Language Models](https://platform.openai.com/docs/models) for Q&A style chatbots
+- How to use [Streamlit](https://streamlit.io) to easily deploy your awesome app to the internet for everyone to see!
 
 
 ## Prerequisites
