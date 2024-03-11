@@ -37,19 +37,13 @@ Make sure you have a vector-capable Astra database (get one for free at [astra.d
 
 ![codespace](./assets/openai-key.png)
 
-### Install Required Packages
+### Create a Virtual Environment [Optional] 
 
 Some environments can be managed externally by a system package manager, such as Homebrew in macOS. 
 
 This means that your system may prevent you from installing packages globally to avoid conflicts with packages managed by the system package manager. This may pose an obstacle to package installation.
 
 **To avoid this issue, you can Create a Virtual Environment before running the following command.**
-
-```python
-pip3 install -r requirements.txt
-```
-
-#### Create a Virtual Environment [Optional] 
 
 ```bash
 cd "<YOUR-INSTALLATION-PATH>"
@@ -91,11 +85,7 @@ source "<YOUR-INSTALLATION-PATH>"/myenv/bin/activate.csh
 
 Once the virtual environment is activated, you will see its name in the prompt, indicating that any Python or pip commands will now run within this isolated environment. You can then install packages using pip.
 
-```python
-pip3 install -r requirements.txt
-```
-
-4. In order to check which packages have been installed.
+3. In order to check which packages have been installed.
 
 ```
 pip3 freeze
@@ -103,6 +93,12 @@ pip3 freeze
 Which you can save to requirements.txt if you want:
 ```
 pip3 freeze > requirements.txt
+```
+
+### Install Required Packages
+
+```python
+pip3 install -r requirements.txt
 ```
 
 ## 1️⃣ Getting started with Streamlit to build an app
