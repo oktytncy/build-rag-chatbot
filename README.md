@@ -39,15 +39,15 @@ Make sure you have a vector-capable Astra database (get one for free at [astra.d
 
 ### Install Required Packages
 
-```python
-pip3 install -r requirements.txt
-```
-
 Some environments can be managed externally by a system package manager, such as Homebrew in macOS. 
 
 This means that your system may prevent you from installing packages globally to avoid conflicts with packages managed by the system package manager. This may pose an obstacle to package installation.
 
-To avoid this issue, you can Create a Virtual Environment.
+**To avoid this issue, you can Create a Virtual Environment before running the following command.**
+
+```python
+pip3 install -r requirements.txt
+```
 
 #### Create a Virtual Environment [Optional] 
 
