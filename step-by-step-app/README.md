@@ -19,7 +19,7 @@ Why? Studies show a **37% efficiency boost** in day to day work activities!""")
 ```
 The first step is to import the streamlit package. Then we call `st.title` to write a title to the web page and lastly we write some markdown content to the web page using `st.markdown`.
 
-Check out the complete code in [app_1.py](./step-by-step-app/app_1.py).
+Check out the complete code in [app_1.py](./app_1.py).
 
 **If you want to test and run the app:**
 ```bash
@@ -53,7 +53,7 @@ if question := st.chat_input("What's up?"):
         st.markdown(answer)
 ```
 
-Check out the complete code in [app_2.py](./step-by-step-app/app_2.py).
+Check out the complete code in [app_2.py](./app_2.py).
 
 **If you want to test and run the app:**
 ```bash
@@ -71,7 +71,7 @@ In this step we'll make sure to keep track of the questions and answers so that 
 
 This approach works because the `session_state` is stateful across Streamlit runs.
 
-Check out the complete code in [app_3.py](./step-by-step-app/app_3.py).
+Check out the complete code in [app_3.py](./app_3.py).
 
 **If you want to test and run the app:**
 ```bash
@@ -123,7 +123,6 @@ chain = inputs | prompt | chat_model
 response = chain.invoke({'question': question})
 answer = response.content
 ```
-Check out the complete code in [app_4.py](./step-by-step-app/app_4.py).
 
 Before we continue, we have to provide the `OPENAI_API_KEY` in `./streamlit/secrets.toml`. There is an example provided in `secrets.toml.example`:
 
@@ -140,7 +139,7 @@ Let's start with the question:
 
 As you will see, you'll receive a very generic answer without the information that is available in the CNN data.
 
-Check out the complete code in [app_4.py](./step-by-step-app/app_4.py).
+Check out the complete code in [app_4.py](./app_4.py).
 
 **If you want to test and run the app:**
 ```bash
@@ -203,7 +202,7 @@ If we ask the same question again:
 
 As you will see, now you'll receive a very contextual answer as the Vector Store provides relevant CNN data to the Chat Model.
 
-Check out the complete code in [app_5.py](./step-by-step-app/app_5.py)
+Check out the complete code in [app_5.py](./app_5.py)
 
 **If you want to test and run the app:**
 ```bash
@@ -242,7 +241,7 @@ with st.chat_message('assistant'):
     response_placeholder = st.empty()
 ```
 
-Check out the complete code in [app_6.py](./step-by-step-app/app_6.py).
+Check out the complete code in [app_6.py](./app_6.py).
 
 **If you want to test and run the app:**
 ```bash
