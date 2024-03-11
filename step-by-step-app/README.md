@@ -334,8 +334,8 @@ On the main screen, when logged in, click `New app`.
 
     ![Streamlit](/./assets//streamlit-5.png)
 
-3. Click on Advanced, select Python 3.11 and copy-paste the contents from your `secrets.toml`.
+3. Click on Advanced, select Python 3.11 and copy-paste the contents from your `secrets.toml`. **Click Deploy!** Wait for a bit and your app is online for everyone to use!
 
-Click Deploy! Wait for a bit and your app is online for everyone to use!
+    ![Streamlit](/./assets/streamlit-6.png)
 
 ⛔️ Be aware that this app is public and uses your OpenAI account which will incur cost. You'll want to shield it off by clicking `Settings->Sharing` in the main screen and define the email addresses that are allowed access. In order to enable this, link your Google account.
