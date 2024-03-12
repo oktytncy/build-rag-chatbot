@@ -71,7 +71,7 @@ cd "<YOUR-INSTALLATION-PATH>"
 Install environment and activate the virtual environment.
 
 ```python
-python3 -m venv myenv
+python3.11 -m venv myenv
 ```
 
 ```bash
